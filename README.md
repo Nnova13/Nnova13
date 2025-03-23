@@ -1,16 +1,52 @@
-## Hi there 👋
+<h1 align="center">
+  <b> 👋 Hi, I'm Nnova!</b>
+</h1>
 
-<!--
-**Nnova13/Nnova13** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Input:
+```python
+class Profile():
+    
+    def __init__(self):
+        self.name = "Nnova"
+        self.username = "Nnova13"
+        self.age = 18
+        self.mail = "nnova13@gmail.com"
+        self.bio = "Developer Python | I like to code | Learning new technologies"
+        self.skills = ["Python", "HTML", "CSS", "JavaScript"]
+        self.projects = [
+            {"name": "revers-art", "link": "https://github.com/Nnova13/2025_1093_revers-art"}
+        ]
+    
+    def __str__(self):
+        projects_str = "\n".join([f"  - [{project['name']}]({project['link']})" for project in self.projects])
 
-Here are some ideas to get you started:
+        return f"""
+👋 Hello, I'm {self.name}!
+🔧 Bio: {self.bio}
+🎂 Age: {self.age}
+✉️ Email: {self.mail}
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+🛠 Skills:
+  - {', '.join(self.skills)}
+
+📂 Projects:
+{projects_str}
+        """
+
+if __name__ == '__main__':
+    me = Profile()
+    print(me)
+```
+Output:
+```bash
+👋 Hello, I'm Nnova!
+🔧 Bio: Developer Python | I like to code | Learning new technologies
+🎂 Age: 18
+✉️ Email: nnova13@gmail.com
+
+🛠️ Skills:
+  - Python, HTML, CSS, JavaScript
+
+📂 Projects:
+  - [revers-art](https://github.com/Nnova13/2025_1093_revers-art)
+```
