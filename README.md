@@ -50,3 +50,7 @@ Output:
 📂 Projects:
   - [revers-art](https://github.com/Nnova13/2025_1093_revers-art)
 ```
+### GitHub Stats:
+
+![Github Stats](https://github-readme-stats.vercel.app/api?username=Nnova13&show_icons=true&count_private=true&hide_title=true&hide=prs&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Nnova13&layout=compact&theme=radical)
